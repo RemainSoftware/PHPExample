@@ -4,7 +4,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
 
     public function _initLogging() {
 
-        // Need to get DB adapter first as its not initaliased at this stage
+        // Need to get DB adapter first as its not initialized at this stage
         $this->bootstrap('db'); // Bootstrap the db resource from configuration
 
         $db = $this->getResource('db');
